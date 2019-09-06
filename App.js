@@ -4,6 +4,12 @@ import {AppLoading} from "expo";
 import * as Font from 'expo-font';
 import {Ionicons} from "@expo/vector-icons";
 import MainNavigation from "./src/navigation/MainNavigation";
+import {Provider} from "mobx-react";
+import MovieStore from "./src/stores/MovieStore";
+
+const stores = {
+    MovieStore
+};
 
 export default class App extends React.Component {
 
@@ -26,8 +32,10 @@ export default class App extends React.Component {
         if (loaded) {
             return (
                 <>
-                    <StatusBar barStyle="light-content"/>
-                    <MainNavigation/>
+                    <Provider {...stores}>
+                        <StatusBar barStyle="light-content"/>
+                        <MainNavigation/>
+                    </Provider>
                 </>
             );
         } else {
