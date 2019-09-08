@@ -6,9 +6,11 @@ import {Ionicons} from "@expo/vector-icons";
 import MainNavigation from "./src/navigation/MainNavigation";
 import {Provider} from "mobx-react";
 import MovieStore from "./src/stores/MovieStore";
+import TVStore from "./src/stores/TVStore";
 
 const stores = {
-    MovieStore
+    MovieStore,
+    TVStore
 };
 
 export default class App extends React.Component {
