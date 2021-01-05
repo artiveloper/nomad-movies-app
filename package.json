@@ -10,7 +10,7 @@
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@expo/vector-icons": "^10.0.5",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "expo": "^34.0.1",
     "expo-font": "^6.0.1",
     "mobx": "^5.13.0",
